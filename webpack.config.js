@@ -29,7 +29,7 @@ Encore.configureDefinePlugin((options) => {
 Encore.enableSassLoader()
     .enableVueLoader(() => {}, { runtimeCompilerBuild: false })
     .setOutputPath('dist/')
-    .setPublicPath('/')
+    .setPublicPath('/tonscan')
     .addEntry('application', './src/js/app.js')
     .addStyleEntry('style', './src/sass/app.scss')
     .copyFiles({ from: './src', to: '[name].[ext]', pattern: /addrbook\.json$/ })
